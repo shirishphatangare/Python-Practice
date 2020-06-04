@@ -1,4 +1,4 @@
 # Default ignored files
-/venv/
-/.idea/
+venv/
+.idea/
 
