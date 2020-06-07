@@ -3,16 +3,19 @@
 
 movies = []  # List of dictionaries - Global variable
 
+USER_CHOICE = """           
+        *** Menu ***
+-------------------------
+1) Add a new movie ('A')
+2) List all movies ('L')
+3) Find a movie ('F')
+4) Quit ('Q')
+-------------------------
+Enter your choice (A/L/F/Q):  """
+
+
 def menu():
-    user_choice = input(
-    """                     *** Menu ***
-                      -------------------------
-                      1) Add a new movie ('A')
-                      2) List all movies ('L')
-                      3) Find a movie ('F')
-                      4) Quit ('Q')
-                      -------------------------
-                      Enter your choice (A/L/F/Q): """)
+    user_choice = input(USER_CHOICE)
 
     while(user_choice.upper() != 'Q'):
         if(user_choice.upper() == 'A'):
@@ -22,17 +25,9 @@ def menu():
         elif(user_choice.upper() == 'F'):
             find_movie()
         else:
-            print("Invalid choice. Please try again!")
+            print("Invalid choice. Please try again (A/L/F/Q)")
 
-        user_choice = input(
-        """                 *** Menu ***
-                      -------------------------
-                      1) Add a new movie ('A')
-                      2) List all movies ('L')
-                      3) Find a movie ('F')
-                      4) Quit ('Q')
-                      -------------------------
-                      Enter your choice (A/L/F/Q): """)
+        user_choice = input(USER_CHOICE)
 
 
 def add_movie():
