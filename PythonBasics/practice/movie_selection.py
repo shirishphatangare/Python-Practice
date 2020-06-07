@@ -51,10 +51,11 @@ def add_movie():
 
 
 def list_movies(movies):
-    for movie in movies:
-        print('-' * 20)
-        show_item_details(movie)
-        print('-' * 20)
+    if movies is not None:
+        for movie in movies:
+            print('-' * 20)
+            show_item_details(movie)
+            print('-' * 20)
 
 
 # Generalization with item
@@ -74,11 +75,20 @@ def find_movie():
 
 # Generalization with items
 def get_found_items(items, expected_result, finder_function):
+    # Method 1 - Using for loop
     found_items = []
-    for item in items:
-        if finder_function(item) == expected_result.casefold():
-            found_items.append(item)
+    try:
+        for item in items:
+            if finder_function(item) == expected_result.casefold():
+                found_items.append(item)
+    except KeyError:
+        print("Wrong entry, please enter correct choice (name/genere/year) ")
     return found_items
 
+    # Method 2 - Using list comprehension
+    # try:
+    #     return [item for item in items if finder_function(item) == expected_result.casefold()]
+    # except KeyError:
+    #     print("Wrong entry, please enter correct choice (name/genere/year) ")
 
 menu()
