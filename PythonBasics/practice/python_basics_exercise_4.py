@@ -59,7 +59,12 @@ print("Oldest student name is: ", get_oldest_student(ages))
 
 #4
 def new_ages(ages,n):
-    student_names = [(k1, v1) for k1, v1 in ages.items() if n == v1] # list comprehension to create a list of tuples
-    return dict(student_names) # convert list of tuples to dictionary using dict() method
+    # 1) Method 1
+    # student_names = [(k1, v1) for k1, v1 in ages.items() if n == v1] # list comprehension to create a list of tuples
+    # return dict(student_names) # convert list of tuples to dictionary using dict() method
+
+    # 2) Method 2
+    student_names = { k1:v1 for k1, v1 in ages.items() if n == v1 } # Dictionary comprehension
+    return student_names
 
 print("New ages list is: ", new_ages(ages,10))
