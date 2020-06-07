@@ -1,8 +1,9 @@
 
 LIBRARY_CSV_FILE = "resources/digital_library_csv.txt"
 
+# Just opening file in append mode will create that file without deleting existing data
 def create_library_database():
-    with open(LIBRARY_CSV_FILE, "a"): # Just opening file in write mode will create that file
+    with open(LIBRARY_CSV_FILE, "a"):
         pass
 
 
