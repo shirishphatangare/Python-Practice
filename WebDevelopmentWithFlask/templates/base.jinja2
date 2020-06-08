@@ -1,0 +1,14 @@
+<!-- Parent jinja2 -->
+<!-- jinja2 templates can be integrated with bootstrap/css for styling-->
+<!-- jinja2 templates can be integrated with js/jQuery for dynamic user interactions-->
+
+
+<!DOCTYPE html>
+<head></head>
+<body>
+	<a href="{{ url_for('home') }}">Home</a> <!-- We add this in base.jinja2 and outside the content block so that it is not overridden by other pages. -->
+	{% block content %}
+
+	{% endblock %}
+</body>
+</html>
