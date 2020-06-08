@@ -1,3 +1,6 @@
+# This is basic example of web development with Flask. There are other complex Python web development frameworks like Django
+# Flask has other features like User management (Login/logout) with session management. Need to explore more on Flask
+
 from flask import Flask, render_template, request, redirect, url_for
 
 # Create a Flask app with an unique name (__name__ will be always unique for an application)
