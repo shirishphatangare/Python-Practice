@@ -1,4 +1,6 @@
-import practice.digital_library_csv_interface as database
+#import practice.digital_library_csv_interface as database
+#import practice.digital_library_json_interface as database
+import practice.digital_library_database_interface as database
 
 USER_CHOICE = """           
         *** Menu ***
@@ -33,7 +35,7 @@ def menu():
 def add_book():
     book_name = input("Please enter a book name: ")
     book_author = input("Please enter author of the book: ")
-    book_item = {'name': book_name, 'author': book_author, 'read': '0'}
+    book_item = {'name': book_name, 'author': book_author}
     database.insert_record(book_item)
 
 

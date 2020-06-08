@@ -1,2 +1,2 @@
-xxx,yyy,0
-xxxx,yyyy,1
+xxx,yyy,1
+x,y,1
