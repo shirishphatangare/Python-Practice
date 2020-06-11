@@ -1,0 +1,167 @@
+Python Basics
+------------------------------
+- Basics of Python
+- Language Fundamentals (Variables, Data Types)
+- Complex Data Structure
+- Flow Controls
+- Function in Python (UDF)
+- Functional Programming:- Lamda Expressions
+- Exception Handling
+- Packages and Modules in Python
+
+Advanced Python - Level1
+------------------------------
+- Object Oriented Concepts in Python
+- Exception Handling (User Defined Exception)
+- File Handling
+- Database handling
+- Regular Expressions
+- Python GUI
+
+--------------------------------------------------------------------------------
+Python Basics:
+--------------------------------------------------------------------------------
+- popularity and growth as it’s 
+- flexible and easy to use 
+- Python is expressive
+- Python is readable
+- Python is cross - platform
+- free
+
+- grown from a scripting solution for sysadmins to web development for programmers to the driving force behind machine learning. It’s used everywhere from DevOps to statistical analysis, and even in desktop software.
+- high-level, dynamically typed and interpreted
+- supports cross-platform operating systems which makes building applications with it all the more convenient(globally known applications such as YouTube, BitTorrent, DropBox, etc. use Python to achieve their functionality)
+
+- There are two tracks of Python versions available today 2.x and 3.x. Python version 2.x is widely deployed and the industry will eventually move to 3.x. 
+- Python Package Manager (pip) :When Python is installed from the source, it has come with library of standard modules. When a Python interpreter is invoked, very limited number of modules were imported by default into your program’s main namespace. Other standard modules in the library can be imported into your program when you need them. There are many vendors, developer community create Python modules and deliver them through pip. pip is a Python package installer which is used to install Python packages from a repository called PyPI (Python Package Index). If you download Python versions 2.7.9 (or 3.4) and above from www.python.org, pip installer is installed by default.
+
+-3 main popular applications for Python:
+1)Web Development
+2)Data Science — including machine learning, data analysis, and data visualization
+3)Scripting : writing small programs that are designed to automate simple tasks.
+--------------------------------------------------------------------------------
+--->Use Cases Spread :
+--------------------------------------------------------------------------------
+==>(1)Hardware: Automating Network Administration:
+- IT modernization
+- Process Control: Measurement Computing devices have options to both read and output analog and digital data. After analyzing the data using the python packages , the same hardware can be used to control an entire system.
+---------------------------
+==>(2)Software:
+-  Adding Extensibility to Legacy Applications: choice for modernizing legacy applications to add machine learning capabilities to them
+- perfect match for database interactions and writing APIs, so it’s become the key element in the development of many globally popular websites and web services. Python frameworks Django and Flask are the most popular web development frameworks.security, scalability, convenience that they provide is unparalleled compared to starting the development of a website from scratch.
+- Python a great language choice for data tasks
+- Data analytics and machine learning: development of data analytics solutions and data science- and machine learning-powered solutions. Python libraries as OpenCV and scikit-learn for building machine-learning algorithms, and Keras for creating and training neural networks. TensorFlow is more of a low-level library that allows you to build custom machine learning algorithms.
+- Data Science and Data Visualization: Visualize the data libraries such as Matplotlib, Seaborn, which are helpful in plotting graphs and much more. This is what Python offers you to become a Data Scientist.
+- Game Development: libraries such as PySoy which is a 3D game engine supporting Python 3, PyGame which provides functionality and a library for game development. 
+- Desktop GUI: Used to program desktop applications. It provides the Tkinter library that can be used to develop user interfaces.but it doesn’t seem like the most popular choice either.Recently, some companies have started using JavaScript to create Desktop applications, too. For example, Slack’s desktop app was built with something called Electron. It allows you to build desktop applications with JavaScript.
+- Web Scraping Applications: Python can be used to pull a large amount of data from websites which can then be helpful in various real-world processes such as price comparison, job listings, research and development and much more. 
+- Embedded Applications : Python is based on C which means that it can be used to create Embedded C software for embedded applications. This helps us to perform higher-level applications on smaller devices which can compute Python. Most well-known embedded application could be the Raspberry Pi which uses Python for its computing. It can be used as a computer or like a simple embedded board to perform high-level computations.
+
+
+-->example: Industry Based Use Cases (Refer to : https://www.activestate.com/wp-content/uploads/2019/04/ActiveState-Top-10-Python-Use-Cases-Customer-Successes.pdf)
+1. Insurance: creating business insights with machine learning
+2. Retail Banking: flexible data transformation and manipulation
+3. Aerospace :meeting software system deadlines
+4. Finance :data mining to identify cross-sell opportunities
+5. Business Services: API access to financial information
+6. Hardware: automating network administration
+7. Healthcare: predicting disease prognosis
+8. Consulting Services: bespoke web development
+9. InfoTech: IT modernization
+10. Software: adding extensibility to legacy applications
+
+-----------------------------------------------------------------------------
+Python Core Concepts
+- Data Type
+- Data Structure
+- Control Flow Statements
+- Data Operations
+- Modules
+- Handling Structured Data
+
+Official Website: Python.org
+Distributors: Anaconda (Open source Data science platform using Python)
+
+--->help(): Basic function to provide help on any topi/keyword/modules
+- part of the pydoc library
+- gets detailed information on a particular topic
+
+--->dir(): Show the list of built-in packages/data/functions defined in the current namespace
+- lists out the methods and data defined
+----------------------------------------------------------------------------
+- There are several vendor developed integrated development environments (IDE) such as Wing IDE, PyCharm, Komodo, etc are available in the market. In addition to the benefits provided by advanced editors, IDEs are great while developing, testing and debugging complex software applications.
+
+IDE: PyCharm
+- PyCharm is a text editor and integrated development environment specifically designed for writing Python code.
+
+Getting Started with PyCharm: https://www.jetbrains.com/help/pycharm/basic-tutorials.html 
+Debugging Applications: https://www.jetbrains.com/help/pycharm/debugging-your-first-python-application.html
+
+- List of Python Packages(https://pypi.org/): The Python Package Index (PyPI) lists over 100,000 open-source packages, so you won’t have to reinvent the wheel. 
+
+----------------------------------------------------------------------------
+-->Data Type
+- A couple of data types important to us is strings and integers.
+- Strings are represented within quotes(using single, double and triple quotes).If you need to type the text in multiple lines use triple quotes.
+
+Arithmetics Operators"
+** :Exponentation
+// : Quotient is a floor of the value
+
+Aritmetic Operators with String
++ : Concatenation
+* : Repetition
+
+String:
+- String concatentation can only STring values
+- String is an Array of character
+- String indexing could be applied(index starts from 0)
+- String is immutable
+
+---> Flow Controls
+- Blocks of code are identified through identation
+- Starting of the block is identified by a :
+
+1)Branching Statement
+2)Looping Statements
+
+1)Branching Statement
+--> Example: Code to identify a positive,Negative or a zero
+x=5
+if x<0:
+	print("Negative Value")
+	print("--------")
+elif x>0:
+	print("Positive Value")
+else:
+	print("Zero")
+print("---- End----")
+
+2)Looping Statement
+- while
+- For Loop
+
+----------------------------------------------------------------------------
+-->Data Structure : It is a way of organizing the data in a system.
+- Sequence types in Python : lists, tuples
+#Complex DataTypes
+(1)List: 
+(2)Dictionaries: Key-value(Map Collection in Java/Associative Arrays)
+(3)sets
+(4)Tuples
+
+There are four collection data types in the Python programming language:
+-List : ordered and mutable. Allows duplicate members.Indexed
+-Tuple : ordered and immutable. Allows duplicate members.
+-Set : unordered and unindexed. No duplicate members.
+-Dictionary : unordered, mutable and key-indexed. No duplicate members.(Map in Java or Associative Arrays )
+
+Array Vs List
+- Arrays have an upper limit 
+- Lists are dynamic array as it does not have an upper limit
+
+
+
+
+
+
