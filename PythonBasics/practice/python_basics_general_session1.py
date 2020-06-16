@@ -184,5 +184,6 @@ dir(str)
 #Some String Functions
 print("Length(len):",len(str3));
 
+time.sleep(15)
 
 

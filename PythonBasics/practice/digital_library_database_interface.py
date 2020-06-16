@@ -19,10 +19,13 @@ def insert_record(record):
 def get_all_records():
     with DatabaseConnection(LIBRARY_SQLLITE_DATA_FILE) as connection:
         cursor = connection.cursor()
-        cursor.execute("SELECT * FROM books")
+        #result = cursor.execute("SELECT * FROM books")
+        cursor.execute("SELECT * FROM books") # result may or may not be used
+        #print("Type of result: ", type(result)) # Type of result is -  <class 'sqlite3.Cursor'>
         # cursor.fetchall() Returns a list of tuples
         # Covert List of tuples to list of dicts
-        books = [ {'name':row[0],'author':row[1],'read':row[2]}  for row in cursor.fetchall() ]
+        #books = [ {'name':row[0],'author':row[1],'read':row[2]}  for row in result.fetchall() ] # result works same as cursor
+        books = [{'name': row[0], 'author': row[1], 'read': row[2]} for row in cursor.fetchall()]
     return books
 
 

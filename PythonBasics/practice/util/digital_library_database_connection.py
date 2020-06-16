@@ -1,6 +1,7 @@
 import sqlite3
 
 # This utility class acts as a custom database context manager to manage db connection object
+# With context managers, DB connection is committed and closed automatically. We can also customize this behavior
 class DatabaseConnection:
 
     def __init__(self, host: str):

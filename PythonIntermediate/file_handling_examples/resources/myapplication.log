@@ -1,0 +1,7 @@
+File handling in
+Python is pretty easy
+because most of the basic operations just take a
+single line of code to do the job
+Python’s open() method returns an object which we call
+as the filehandle. Python adds a no. of functions that we
+can call using this object.
