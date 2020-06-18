@@ -1,0 +1,16 @@
+[{
+  "id": 1000,
+  "firstname": "Sandeep",
+  "lastname": "Kapre",
+  "address": "address1"
+}, {
+  "id": 2000,
+  "firstname": "Deep",
+  "lastname": "Tyagi",
+  "address": "address2"
+},  {
+  "id": 3000,
+  "firstname": "Kayal",
+  "lastname": "Puri",
+  "address": "address3"
+}]
