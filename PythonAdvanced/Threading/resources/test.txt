@@ -1,0 +1,6 @@
+Data from http://www.yahoo.fr fetched
+Data from http://www.lemonde.fr fetched
+Data from http://www.youtube.fr fetched
+Data from http://www.yahoo.fr fetched
+Data from http://www.lemonde.fr fetched
+Data from http://www.youtube.fr fetched
