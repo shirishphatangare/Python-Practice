@@ -377,6 +377,8 @@ print(list(product(*A)))
 B = [[1,2,3],[3,4,5],[7,8]]
 print(list(product(*B)))
 
+# The difference between combinations and permutations is ordering.
+# With permutations we care about the order of the elements, whereas with combinations we don’t.
 print("---------permutations()-------------")
 from itertools import permutations
 #itertools.permutations(iterable[, r]) - Return successive r length permutations of elements in the iterable.
