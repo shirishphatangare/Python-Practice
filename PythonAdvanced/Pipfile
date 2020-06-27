@@ -11,6 +11,8 @@ django = "*"
 aiohttp = "*"
 bs4 = "*"
 requests-html = "*"
+schedule = "*"
+python-crontab = "*"
 
 [requires]
 python_version = "3.8"
