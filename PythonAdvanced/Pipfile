@@ -10,6 +10,7 @@ requests = "*"
 django = "*"
 aiohttp = "*"
 bs4 = "*"
+requests-html = "*"
 
 [requires]
 python_version = "3.8"
